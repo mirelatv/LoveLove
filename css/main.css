@@ -1,0 +1,212 @@
+/*CLASES REUTILIZABLES*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container:after {
+  clear: both;
+}
+
+
+.paragraph {
+  margin-top: 0px;
+}
+
+.menu {
+  color: #373B47;
+  text-decoration: none;
+}
+
+.menu:hover {
+  color: #E95853;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Cabecera */
+
+header{
+  display: block;
+  float: left;
+  /*outline: 1px solid rebeccapurple;*/
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .menu{
+  font-weight: bolder;
+  /*outline: 1px solid red;*/
+  display: inline-block;
+
+  box-sizing: border-box;
+  margin-top: 35px;
+  margin-right: 50px;
+}
+header .menu:first-child{
+  margin-left: 160px;
+}
+header .logo{
+ /* outline: 1px solid green;*/
+  display: inline-block;
+  margin-left: 600px;
+}
+header .logo img{
+  width: 70px;
+  height: 70px;
+}
+/* Principal abajo */
+body .firstSection{
+  outline: 1px solid brown;
+  background-image: url("../assets/images/bg-home.jpg");
+  background-size:100% 100%;
+  height: 580px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+.firstSection div{
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  padding-top: 75px;
+}
+.firstSection div h2{
+  font-weight: bolder;
+}
+.firstSection div h1{
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 50px;
+}
+.firstSection div p{
+  line-height: 0px;
+  margin-bottom: 90px;
+}
+.firstSection div .menu{
+  background-color: #2ecc71;
+  padding: 15px;
+  color: white;
+  margin-bottom: 0;
+}
+.secondSection{
+    margin: 0;
+    /* outline: 1px solid orange; */
+    background-color: rgb(241, 124, 114);
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    height: 670px;
+}
+.secondSection div h2{
+    font-size: 25px;
+    margin-bottom: 55px;
+}
+.secondSection div h4{
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.secondSection img{
+    width: 200px;
+    height: 200px;
+}
+.secondSection .firstImage, .secondImage, .thirdImage{
+    margin-top: 90px;
+    float: left;
+    margin-right: 130px;
+    line-height: 0px;
+}
+.secondSection .firstImage{
+    margin-left: 220px
+}
+.firstImage, .secondImage, .thirdImage h5 + h6 {
+    margin-bottom:20px;
+}
+.thirdSection {
+    height: 2700px;
+}
+.thirdSection div h2{
+    margin-top: 90px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+.thirdSection div h4{
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(94, 94, 94);
+}
+.thirdSection .container .laptop {
+    height: 900px;
+    width: 950px;
+    margin-top: 60px;
+    margin-left: 110px;
+}
+.thirdSection div img{
+    height: 250px;
+    width: 300px;
+}
+/* Productos ... y empezamos... */
+.Products .content{
+    float:left;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(95, 95, 95);
+}
+.Products .content{
+    margin-left: 70px;
+}
+/* pie  de pagina */
+footer{
+    /*outline: 1px solid red;*/
+    height: 70px;
+    width: 100%;
+    background-color: rgb(55, 59, 71);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    padding: 7px;
+}
